@@ -1,0 +1,10 @@
+#1.  crear entorno virtual 
+$pipenv shell
+#2. instalar flask
+$pipenv install flask
+#3 correr archivo de flask app.py
+$python app.py
+listo
+
+base de datos
+#1. instalar

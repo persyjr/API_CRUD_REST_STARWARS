@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  text-align:justify;
+  color: white;
+  
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  width: 100%;
+  background-image: url("https://wallpapercave.com/wp/TKNSNAA.jpg");
+  object-fit:scale-down;
+  
+  }
+
+
+.body0 {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+    
+}
+  
+.body1   {
+    display: flex;
+    justify-content: center; 
+    max-height: 150vh;
+    width: 370px;
+    
+}
+
+.header {
+    background-color:rgba(0, 234, 255, 0.032); 
+    padding:15px;
+    display:flex;
+    flex-direction: row;
+}
+.post{
+  max-width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color:rgba(0, 234, 255, 0.032); 
+}
+
+
+
+li:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 40px 70px rgba(4, 134, 247, 0.5);
+  transition: 0.9s;
+}
+/* en esta linea comienza la animacion del post*/
+@keyframes show {
+  from{
+    opacity: 0;
+    scale:25%;
+  }  
+  to {
+    opacity : 1 ;
+    scale: 100%;
+  }
+
+}
+li{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 0% cover 70%;
+}
+
+
+.title{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.post > img{
+ 
+  max-width: 370px;
+  object-fit: cover; 
+}

@@ -6,7 +6,8 @@ let userId=0;
 
 window.addEventListener('DOMContentLoaded', async ()=> {
     const response =await fetch('/api/users');
-    const data = await response.json()
+    const data = await response.json();
+    console.log(data);
     users=data;
     
     renderUser(users)
